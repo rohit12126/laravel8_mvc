@@ -8,16 +8,6 @@ use App\Classes\UserManager;
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //$this->middleware('auth');
-    }
-
-    /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
@@ -36,9 +26,9 @@ class HomeController extends Controller
         ]);
         $result = UserManager::updateProfile($req);
         if($result === true){
-            $req->session()->flash('alert-success', 'Your profile updated successfully!'); //set session success message
+            session()->flash('alert-success', 'Your profile updated successfully!'); //set session success message
         }else{
-            $req->session()->flash('alert-error', 'Your profile updation failed!'); //set session error message
+            session()->flash('alert-error', 'Your profile updation failed!'); //set session error message
         }
         return redirect()->back();
     }
