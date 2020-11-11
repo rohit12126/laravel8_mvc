@@ -2,7 +2,7 @@
  <header id="header" class="fixed-top " style="    background: #3d4d6a !important;">
      <div class="container d-flex align-items-center">
 
-         <h1 class="logo mr-auto"><a href="{{ url('/') }}">Arsha</a></h1>
+         <h1 class="logo mr-auto"><a href="{{ url('/') }}">Chapter 247</a></h1>
          <!-- Uncomment below if you prefer to use an image logo -->
          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
